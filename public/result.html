@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NutriCtrl - Result</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #fdfbfb, #ebedee);
+      min-height: 10vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+    }
+
+    header {
+      background-color: #e0884e;
+      width: 100%;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 2.rem;
+      font-weight: bold;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    main {
+      background: #fff;
+      max-width: 900px;
+      width: 100%;
+      padding: 2.5rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      margin-top: 2rem;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h2 {
+      color: #084d0c;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    
+
+    .back-btn {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    .back-btn a {
+      background-color: #0277bd;
+      color: white;
+      text-decoration: none;
+      padding: 0.8rem 2rem;
+      font-size: 1.1rem;
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-btn a:hover {
+      background-color: #01579b;
+    }
+    .back-btn {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    .home-btn a {
+      background-color: #0277bd;
+      color: white;
+      text-decoration: none;
+      padding: 0.8rem 2rem;
+      font-size: 1.1rem;
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .home-btn a:hover {
+      background-color: #01579b;
+    }
+    .home-btn {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+    }
+
+  
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Analysis Result</h1>
+  </header>
+  <main>
+    <p id="ingredientSummary"></p>
+    <h2 id="resultText">Analyzing...</h2>
+    <img id="resultImage" src="images/neutral.png" alt="Result Image" style="display:block;margin: auto; max-width:200px;" />
+    <div class="back-btn">
+      <a href="analysis.html">Analyze Another Product</a>
+    </div>
+    <div class="home-btn">
+      <a href="index.html">Home</a>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
